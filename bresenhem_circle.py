@@ -10,8 +10,8 @@ def BresenhemCircle(x,y,r):
     
     temp2 = []
     choose='point one'
-
-    temp2.append((h,xc, yc,choose))
+    dValue = '-'
+    temp2.append((h,xc, yc,choose,dValue))
 
     while (xc<=yc):
 
@@ -29,6 +29,7 @@ def BresenhemCircle(x,y,r):
             dU = (2*xc)+3
             h = h + dU
             choose = 'U'
+            dValue = 'dU = ',dU
         else:
             # xc += 1
             # yc -= 1
@@ -36,9 +37,10 @@ def BresenhemCircle(x,y,r):
             h = h + dD
             yc -= 1
             choose = 'D'
+            dValue = 'dD = ',dD
         xc += 1
         
-        temp2.append((xc, yc, choose))
+        temp2.append((h,xc, yc, choose,dValue))
 
     p2.reverse()
     p4.reverse()
@@ -76,20 +78,20 @@ for j in v:
     print(j)
 print('-------------')
 
-for a in p1:
-    print('o1', a)
+# for a in p1:
+#     print('o1', a)
 for b in p2:
     print('o2', b)
-for c in p3:
-    print('o3', c)
-for d in p4:
-    print('o4', d)
-for e in p5:
-    print('o5', e)
-for f in p6:
-    print('o6', f)
-for g in p7:
-    print('o7', g)
-for h in p8:
-    print('o8', h)
+# for c in p3:
+#     print('o3', c)
+# for d in p4:
+#     print('o4', d)
+# for e in p5:
+#     print('o5', e)
+# for f in p6:
+#     print('o6', f)
+# for g in p7:
+#     print('o7', g)
+# for h in p8:
+#     print('o8', h)
 

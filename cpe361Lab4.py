@@ -21,8 +21,9 @@ def BresenhamLine(x1, y1, x2, y2):
         print('dx<dy and swap dx,dy')
 
     D = 2*dy - dx
+    print('D=',D)
     y = 0
-    print('xsign =',xsign,',ysign =',ysign,',m =',m,',dx =',rdx,',dy =',rdy)
+    print('xsign =',xsign,',ysign =',ysign,',m =',m,',dx =',dx,',dy =',dy)
     print('xx =',xx,',xy =',xy,',yx =',yx,',yy =',yy)
     print('-------------')
     print('x, y, D, choose')
